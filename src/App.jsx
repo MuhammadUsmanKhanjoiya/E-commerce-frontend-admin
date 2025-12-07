@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export const backendUrl = "http://localhost:8000";
+export const backendUrl = "https://backend-e-commerce-ncjb.onrender.com";
 export const currency = 'PKR';
 function App() {
   const [token, setToken] = useState("");
