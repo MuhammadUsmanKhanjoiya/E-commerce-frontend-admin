@@ -8,7 +8,7 @@ function List() {
 
   const fetchList = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/product/list`);
+      const response = await axios.get(`https://backend-e-commerce-ncjb.onrender.com/api/product/list`);
       if (response.data.success) {
         setList(response.data.product);
       } else {
