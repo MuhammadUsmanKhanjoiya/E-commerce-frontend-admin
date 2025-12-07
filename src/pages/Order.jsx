@@ -12,7 +12,7 @@ function Order() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000" + "/api/order/list",
+        "https://backend-e-commerce-ncjb.onrender.com" + "/api/order/list",
         {},
         { headers: { token } }
       );
