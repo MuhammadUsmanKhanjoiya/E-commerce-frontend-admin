@@ -19,10 +19,20 @@ function Add({ token }) {
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
   const [loading , setLoading]=useState(false)
+  const [sizeError, setSizeError] = useState("");
+
 
   const onSubmithandler = async (e) => {
     e.preventDefault();
-     setLoading(true)
+    if (sizes.length === 0) {
+    setSizeError("Please select at least one size");
+    return;
+  }
+
+  setSizeError(""); 
+    
+    
+    setLoading(true)
      try {
       const formdata = new FormData();
       formdata.append("name", name);
