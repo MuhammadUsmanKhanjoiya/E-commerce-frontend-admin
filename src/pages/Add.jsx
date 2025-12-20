@@ -24,6 +24,10 @@ function Add({ token }) {
 
   const onSubmithandler = async (e) => {
     e.preventDefault();
+    if (!image1) {
+    toast.error("Please upload at least one image");
+    return;
+  }
     if (sizes.length === 0) {
     setSizeError("Please select at least one size");
     return;
@@ -97,7 +101,6 @@ function Add({ token }) {
               id="image1"
               onChange={(e) => setImage1(e.target.files[0])}
               hidden
-              required
             />
           </label>
           <label htmlFor="image2">
