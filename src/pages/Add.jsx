@@ -29,9 +29,10 @@ function Add({ token }) {
     return;
   }
     if (sizes.length === 0) {
-    setSizeError("Please select at least one size");
-    return;
-  }
+  toast.error("Please select at least one size");
+  return; 
+}
+
 
   setSizeError(""); 
     
