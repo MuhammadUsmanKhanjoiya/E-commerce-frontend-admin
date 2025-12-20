@@ -87,6 +87,7 @@ function Add({ token }) {
               id="image1"
               onChange={(e) => setImage1(e.target.files[0])}
               hidden
+              required
             />
           </label>
           <label htmlFor="image2">
@@ -183,6 +184,7 @@ function Add({ token }) {
             className="w-full px-3 py-2 sm:w-[120px]"
             type="Number"
             placeholder="25"
+            required
           />
         </div>
       </div>
