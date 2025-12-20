@@ -287,6 +287,10 @@ function Add({ token }) {
             </p>
           </div>
         </div>
+        {sizeError && (
+  <p className="text-red-600 text-sm mt-2">{sizeError}</p>
+)}
+
       </div>
       <div className="flex gap-2 mt-2">
         <input
